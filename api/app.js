@@ -23,7 +23,7 @@ app.post('/weather', async(req,res) => {
         res.render("index",{weather:result.data})
     }catch(e){
         // res.send(`City not found, ${e}`);
-        res.render("index",{weather: null, error: "error"})
+        res.render("index",{weather: null, error: "City not found"})
     }
 })
 
